@@ -42,15 +42,6 @@ Luego de haber ejecutado el comando ```mvn test``` en un Shell o Símbolo del Si
 
 *Cambiar Pruebas*
 
-## Desplegar en Heroku
-Para desplegar el programa en Heroku, se debe realizar clic en el siguiente botón de Heroku para desplegar automáticamente la aplicación directamente desde Heroku. 
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://areplab4.herokuapp.com/home.html)
-
-* Para ir a la interfaz principal, poner el recurso ```/home.html``` al final de la URL de Heroku.
-* Para visualizar un fondo de pantalla ofrecido por Fancy Wallpapers, poner el recurso ```/fondodepantalla.html``` al final de la URL de Heroku.
-* Para visualizar un agradecimiento por visitar la página web de Fancy Wallpapers, poner el recurso ```/agradecimiento.html``` al final de la URL de Heroku.
-
 ## Construido con
 * [Maven](https://maven.apache.org/). Herramienta que se encarga de estandarizar la estructura física de los proyectos de software, maneja dependencias (librerías) automáticamente desde repositorios y administra el flujo de vida de construcción de un software.
 * [GIT](https://git-scm.com/). Sistema de control de versiones que almacena cambios sobre un archivo o un conjunto de archivos, permite recuperar versiones previas de esos archivos y permite otras cosas como el manejo de ramas (branches).
