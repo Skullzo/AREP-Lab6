@@ -1,45 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package edu.escuelaing.arep.app;
-
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
-
-/**
- *
- * @author skull
- */
-public class AppTest {
-    
-    public AppTest() {
+import junit.framework.Test;
+import junit.framework.TestCase;
+import static junit.framework.TestCase.assertTrue;
+import junit.framework.TestSuite;
+public class AppTest 
+    extends TestCase
+{
+    public AppTest( String testName )
+    {
+        super( testName );
     }
-    
-    @BeforeAll
-    public static void setUpClass() {
+    public static Test suite()
+    {
+        return new TestSuite( AppTest.class );
     }
-    
-    @AfterAll
-    public static void tearDownClass() {
+    public void testApp()
+    {
+        assertTrue( true );
     }
-    
-    @BeforeEach
-    public void setUp() {
-    }
-    
-    @AfterEach
-    public void tearDown() {
-    }
-
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
 }

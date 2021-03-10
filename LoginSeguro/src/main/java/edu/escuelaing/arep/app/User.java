@@ -1,14 +1,47 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package edu.escuelaing.arep.app;
-
 /**
- *
- * @author skull
+ * Clase encargada de gestionar las credenciales del usuario, como lo son el correo electronico y la clave.
+ * @author  Alejandro Toro Daza
+ * @version 1.0.  (10 de Marzo del 2021) 
  */
 public class User {
-    
+    private String email;
+    private String password;
+    /**
+     * Metodo encargado de obtener las credenciales del usuario en cuestion.
+     * @param email Correo electronico del usuario correspondiente.
+     * @param password Clave del usuario correspondiente.
+     */
+    public User(String email, String password) {
+        this.email = email;
+        this.password = password;
+    }
+    /**
+     * Metodo encargado de obtener el correo electronico del usuario correspondiente.
+     * @return Retorna el correo electronico del usuario correspondiente.
+     */
+    public String getEmail() {
+        return email;
+    }
+    /**
+     * Metodo encargado de establecer el correo electronico del usuario correspondiente.
+     * @param email Correo electronico del ususario correspondiente.
+     */
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    /**
+     * Metodo encargado de obtener la clave del usuario correspondiente.
+     * @return Retorna la clave del usuario correspondiente.
+     */
+    public String getPassword() {
+        return password;
+    }
+    /**
+     * Metodo encargado de establecer la clave del usuario correspondiente.
+     * @param password Parametro que establece la clave del usuario correspondiente.
+     */
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }
