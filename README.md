@@ -1,6 +1,6 @@
 # Aplicación Distribuida Segura en Todos sus Frentes
 ## Descripción
-En la **Aplicación Distribuida Segura en Todos sus Frentes** 
+En la **Aplicación Distribuida Segura en Todos sus Frentes** se desarrolló una aplicación capaz de permitir un acceso seguro desde el browser a la aplicación. Es decir que este garantiza autenticación, autorización e integridad de usuarios, en los que se ha creado una interfaz de inicio de sesión que permite acceso seguro desde el navegador, y donde el usuario puede iniciar sesión de forma segura en 
 
 ## Prerrequisitos
 Para la realización y ejecución tanto del programa como de las pruebas de este, se requieren ser instalados los siguientes programas:
