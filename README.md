@@ -1,6 +1,6 @@
-# Colocar nombre del laboratorio
+# Aplicación Distribuida Segura en Todos sus Frentes
 ## Descripción
-En el **Colocar nombre del laboratorio**.
+En la **Aplicación Distribuida Segura en Todos sus Frentes** 
 
 ## Prerrequisitos
 Para la realización y ejecución tanto del programa como de las pruebas de este, se requieren ser instalados los siguientes programas:
