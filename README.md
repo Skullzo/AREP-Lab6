@@ -40,11 +40,11 @@ mvn test
 
 Pruebas compiladas correctamente para el código fuente **LoginSeguro**.
 
-![img](https://github.com/Skullzo/AREP-Lab5/blob/main/img/Prueba1.PNG)
+![img](https://github.com/Skullzo/AREP-Lab6/blob/main/img/Prueba1.PNG)
 
 Pruebas compiladas correctamente para el código fuente **ServicioSeguro**.
 
-![img](https://github.com/Skullzo/AREP-Lab5/blob/main/img/Prueba2.PNG)
+![img](https://github.com/Skullzo/AREP-Lab6/blob/main/img/Prueba2.PNG)
 
 ## Construido con
 * [Maven](https://maven.apache.org/). Herramienta que se encarga de estandarizar la estructura física de los proyectos de software, maneja dependencias (librerías) automáticamente desde repositorios y administra el flujo de vida de construcción de un software.
