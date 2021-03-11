@@ -46,6 +46,40 @@ Pruebas compiladas correctamente para el código fuente **ServicioSeguro**.
 
 ![img](https://github.com/Skullzo/AREP-Lab6/blob/main/img/Prueba2.PNG)
 
+## Certificados
+Para poder establecer una conexión segura (HTTPS) con la aplicación, garantizando autenticación, autorización e integridad de usuarios, se realiza el respectivo procedimiento de establecimiendo de certificados con llaves para cada uno de los siguientes programas. Para esto, se realizaron dos certificados, uno por cada código fuente, que son ```LoginSeguro``` y ```ServicioSeguro```.
+
+### Certificados en LoginSeguro
+Para establecer la llave en ```LoginSeguro```, primero se ejecutó el siguiente comando dentro de la carpeta ```keystores```, carpeta que almacena todos los certificados y llaves de ```LogService```.
+
+```
+keytool -genkeypair -alias ecikeypair -keyalg RSA -keysize 2048 -storetype PKCS12 -keystore ecikeystore.p12 -validity 3650
+```
+
+Luego de ejecutar el comando, se ingresaron los datos correspondientes a cada una de las preguntas para poder crear la llave. Luego de crear la llave, el resultado se obtiene tal y como se observa en la siguiente imagen.
+
+![img](https://github.com/Skullzo/AREP-Lab6/blob/main/img/LlaveLoginSeguro.PNG)
+
+Para establecer el certificado de la llave ya creada, dentro de la misma carpeta de ```keystores``` se ejecuta el siguiente comando.
+
+```
+keytool -export -keystore ./ecikeystore.p12 -alias ecikeypair -file ecicert.cer
+```
+
+Luego de ejecutar el comando, se observa que el certificado ha sido creado satisfactoriamente para la llave en cuestión.
+
+![img](https://github.com/Skullzo/AREP-Lab6/blob/main/img/CertificadoLoginSeguro.PNG)
+
+Para crear el ```myTrustStore``` para la llave ya creada con su respectivo certificado, se ingresa el siguiente comando.
+
+```
+keytool -import -file ./ecicert.cer -alias firstCA -keystore myTrustStore
+```
+
+Luego de haber ingresado el comando, se verifica que se esté creando el ```myTrustStore``` para la llave que ha sido creada con su respectivo certificado. Luego de verificar que todos los datos retornados estén correctos, se ingresa ```yes``` para poder crear el ```myTrustStore```. Como se ve a continuación, el ```myTrustStore``` ha sido creado satisfactoriamente con su respectivo certificado.
+
+![img](https://github.com/Skullzo/AREP-Lab6/blob/main/img/myTrustStoreLoginSeguro.PNG)
+
 ## Construido con
 * [Maven](https://maven.apache.org/). Herramienta que se encarga de estandarizar la estructura física de los proyectos de software, maneja dependencias (librerías) automáticamente desde repositorios y administra el flujo de vida de construcción de un software.
 * [GIT](https://git-scm.com/). Sistema de control de versiones que almacena cambios sobre un archivo o un conjunto de archivos, permite recuperar versiones previas de esos archivos y permite otras cosas como el manejo de ramas (branches).
