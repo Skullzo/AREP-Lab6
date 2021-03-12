@@ -51,7 +51,7 @@ Pruebas compiladas correctamente para el código fuente **ServicioSeguro**.
 ### AWS
 Para relizar las pruebas correspondientes de la ejecución del programa en AWS, y que el contenedor se encuentra activo desde la máquina virtual, ingresamos en el navegador la siguiente URL: https://ec2-3-95-67-168.compute-1.amazonaws.com:8000. Como se puede observar, el contenedor ha sido desplegado satisfactoriamente desde la máquina virtual montada en AWS. Para poder acceder a ella, se requiere presionar primero clic en **Advanced** y luego en **Continue to ec2-3-95-67-168.compute-1.amazonaws.com (unsafe)**, como se observa a continuación.
 
-![img](https://github.com/Skullzo/AREP-Lab6/blob/main/img/AWS1.PNG)
+![img](https://github.com/Skullzo/AREP-Lab6/blob/main/img/AWS1.png)
 
 Al realizar los pasos descritos anteriormente, se observa que la página ha sido desplegada satisfactoriamente en la máquina virtual.
 
