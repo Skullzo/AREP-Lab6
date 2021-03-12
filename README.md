@@ -46,6 +46,21 @@ Pruebas compiladas correctamente para el código fuente **ServicioSeguro**.
 
 ![img](https://github.com/Skullzo/AREP-Lab6/blob/main/img/Prueba2.PNG)
 
+----------
+
+### AWS
+Para relizar las pruebas correspondientes de la ejecución del programa en AWS, y que el contenedor se encuentra activo desde la máquina virtual, ingresamos en el navegador la siguiente URL: https://ec2-3-95-67-168.compute-1.amazonaws.com:8000. Como se puede observar, el contenedor ha sido desplegado satisfactoriamente desde la máquina virtual montada en AWS. Para poder acceder a ella, se requiere presionar primero clic en **Advanced** y luego en **Continue to ec2-3-95-67-168.compute-1.amazonaws.com (unsafe)**, como se observa a continuación.
+
+![img](https://github.com/Skullzo/AREP-Lab6/blob/main/img/AWS1.PNG)
+
+Al realizar los pasos descritos anteriormente, se observa que la página ha sido desplegada satisfactoriamente en la máquina virtual.
+
+![img](https://github.com/Skullzo/AREP-Lab6/blob/main/img/AWS2.PNG)
+
+Luego de ingresar las credenciales y presionar clic en el botón **Iniciar Sesión**, se observa claramente que la página web redirige al recurso https://ec2-3-95-67-168.compute-1.amazonaws.com:8000/authorized.html, lo cual indica que el inicio de sesión ha sido exitoso y seguro, ya que este segundo recurso se maneja también usando el protocolo HTTPS, indicando que la aplicación garantiza autenticación, autorización e integridad de usuarios.
+
+![img](https://github.com/Skullzo/AREP-Lab6/blob/main/img/AWS3.PNG)
+
 ## Certificados
 Para poder establecer una conexión segura (HTTPS) con la aplicación, garantizando autenticación, autorización e integridad de usuarios, se realiza el respectivo procedimiento de establecimiendo de certificados con llaves para cada uno de los siguientes programas. Para esto, se realizaron dos certificados, uno por cada código fuente, que son ```LoginSeguro``` y ```ServicioSeguro```.
 
@@ -79,6 +94,8 @@ keytool -import -file ./ecicert.cer -alias firstCA -keystore myTrustStore
 Luego de haber ingresado el comando, se verifica que se esté creando el ```myTrustStore``` para la llave que ha sido creada con su respectivo certificado. Luego de verificar que todos los datos retornados estén correctos, se ingresa ```yes``` para poder crear el ```myTrustStore```. Como se ve a continuación, el ```myTrustStore``` ha sido creado satisfactoriamente con su respectivo certificado.
 
 ![img](https://github.com/Skullzo/AREP-Lab6/blob/main/img/myTrustStoreLoginSeguro.PNG)
+
+----------
 
 ### Certificados en ServicioSeguro
 Para establecer la llave en ```ServicioSeguro```, primero se ejecutó el siguiente comando dentro de la carpeta ```keystores```, carpeta que almacena todos los certificados y llaves de ```ServicioSeguro```.
