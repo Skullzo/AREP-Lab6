@@ -53,7 +53,7 @@ Para relizar las pruebas correspondientes de la ejecución del programa en AWS, 
 
 ![img](https://github.com/Skullzo/AREP-Lab6/blob/main/img/AWS1.png)
 
-Al realizar los pasos descritos anteriormente, se observa que la página ha sido desplegada satisfactoriamente en la máquina virtual.
+Luego de realizar clic en **Continue to ec2-3-95-67-168.compute-1.amazonaws.com (unsafe)**, se observa que la página ha sido desplegada satisfactoriamente en la máquina virtual.
 
 ![img](https://github.com/Skullzo/AREP-Lab6/blob/main/img/AWS2.PNG)
 
