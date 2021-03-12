@@ -42,7 +42,7 @@ public class App
             return "";
         });
         get("/information", (req, res) -> {
-            String resp = URLReader.readURL("https://ec2-3-95-67-168.compute-1.amazonaws.com:8000/information");
+            String resp = URLReader.readURL("https://ec2-3-95-67-168.compute-1.amazonaws.com:8001/information");
             System.out.println(resp);
             return resp;
         });
