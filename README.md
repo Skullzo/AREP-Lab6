@@ -95,6 +95,8 @@ Luego de haber ingresado el comando, se verifica que se esté creando el ```myTr
 
 ![img](https://github.com/Skullzo/AREP-Lab6/blob/main/img/myTrustStoreLoginSeguro.PNG)
 
+----------
+
 ### Certificados en ServicioSeguro
 Para establecer la llave en ```ServicioSeguro```, primero se ejecutó el siguiente comando dentro de la carpeta ```keystores```, carpeta que almacena todos los certificados y llaves de ```ServicioSeguro```.
 
