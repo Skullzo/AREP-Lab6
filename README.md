@@ -48,6 +48,24 @@ Pruebas compiladas correctamente para el código fuente **ServicioSeguro**.
 
 ----------
 
+### Docker
+
+Para verificar que en la aplicación Docker se hayan desplegado con éxito los contenedores LoginSeguro y ServicioSeguro en sus respectivos puertos, se abre la aplicación de Docker de escritorio y se hace la verificación que todos los contenedores estén corriendo en sus respectivos puertos. Como se ve en la siguiente imagen, todos los contenedores están corriendo satisfactoriamente.
+
+![img](https://github.com/Skullzo/AREP-Lab6/blob/main/img/Docker1.PNG)
+
+Para comprobar que la página web ha sido desplegada con éxito de manera local utilizando Docker, se ingresa en el navegador la siguiente URL: https://localhost:8000/. Como se puede observar, el contenedor ha sido desplegado satisfactoriamente de manera local utilizando Docker. Para poder acceder a ella, se requiere presionar primero clic en **Advanced** y luego en **Continue to localhost (unsafe)**, como se observa a continuación.
+
+![img](https://github.com/Skullzo/AREP-Lab6/blob/main/img/Docker2.png)
+
+Luego de realizar clic en **Continue to localhost (unsafe)**, se observa que la página ha sido desplegada satisfactoriamente de manera local utilizando Docker.
+
+![img](https://github.com/Skullzo/AREP-Lab6/blob/main/img/Docker3.PNG)
+
+Luego de ingresar las credenciales y presionar clic en el botón **Iniciar Sesión**, se observa claramente que la página web redirige al recurso https://localhost:8000/authorized.html, lo cual indica que el inicio de sesión ha sido exitoso y seguro, ya que este segundo recurso se maneja también usando el protocolo HTTPS, indicando que la aplicación garantiza autenticación, autorización e integridad de usuarios.
+
+![img](https://github.com/Skullzo/AREP-Lab6/blob/main/img/Docker4.PNG)
+
 ### AWS
 Para relizar las pruebas correspondientes de la ejecución del programa en AWS, y que el contenedor se encuentra activo desde la máquina virtual, ingresamos en el navegador la siguiente URL: https://ec2-3-95-67-168.compute-1.amazonaws.com:8000. Como se puede observar, el contenedor ha sido desplegado satisfactoriamente desde la máquina virtual montada en AWS. Para poder acceder a ella, se requiere presionar primero clic en **Advanced** y luego en **Continue to ec2-3-95-67-168.compute-1.amazonaws.com (unsafe)**, como se observa a continuación.
 
