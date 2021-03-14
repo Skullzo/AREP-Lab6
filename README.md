@@ -163,6 +163,6 @@ Luego de haber ingresado el comando, se verifica que se esté creando el ```myTr
 ## Autor
 [Alejandro Toro Daza](https://github.com/Skullzo)
 ## Licencia & Derechos de Autor
-**©** Alejandro Toro Daza, Estudiante de Ingeniería de Sistemas de la Escuela Colombiana de Ingeniería Julio Garavito
+**©** Alejandro Toro Daza, Estudiante de Ingeniería de Sistemas de la [Escuela Colombiana de Ingeniería Julio Garavito](https://www.escuelaing.edu.co/es/).
 
 Licencia bajo la [GNU General Public License](https://github.com/Skullzo/AREP-Lab6/blob/main/LICENSE).
